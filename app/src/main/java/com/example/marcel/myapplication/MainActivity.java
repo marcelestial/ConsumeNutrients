@@ -24,28 +24,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(View v){
-
-        double calories = Double.parseDouble(cal.getText().toString());
-        double sodium = Double.parseDouble(sod.getText().toString());
-        double potassium = Double.parseDouble(pot.getText().toString());
-        double protein = Double.parseDouble(pro.getText().toString());
-        double fiber = Double.parseDouble(fib.getText().toString());
-        double gram = Double.parseDouble(grams.getText().toString());
-
-        calories *= gram;
-        sodium *= gram;
-        potassium *= gram;
-        protein *= gram;
-        fiber *= gram;
-
-        String results = "Calories: " + calories
-                +"\nSodium: " + sodium
-                +"\nPotassium: " + potassium
-                +"\nProtein: " + protein
-                +"\nFiber: " + fiber;
-
-        TextView present = (TextView) findViewById(R.id.results);
-        present.setText(results);
     }
 
     public void plusOne(View v){
